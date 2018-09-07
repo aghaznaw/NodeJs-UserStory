@@ -1,0 +1,18 @@
+<div class="container" ng-controller="MainController as login">
+	<div class="row">
+		<div class="col-sm-6 col-md-4 col-md-offset-4 col-centered">
+			<h1>Login</h1>
+			<form method="post" class="form-signin" ng-submit="login.doLogin()">
+				<div class="form-group">
+					<label class="label" for="username">Username:</label>
+					<input type="text" class="form-control" name="username" id="username" ng-model="login.loginData.username">
+				</div>
+				<div class="form-group">
+					<label class="label" for="password">Password:</label>
+					<input type="password" class="form-control" name="password" id="password" ng-model="login.loginData.password">
+				</div>
+				<input type="submit" name="submit" class="btn btn-success">
+			</form>
+		</div>
+	</div>
+</div>
